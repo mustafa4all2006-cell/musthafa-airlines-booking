@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musthafa Hussain Airlines</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <a class="logo" href="index.html">✈ MUSTHAFA HUSSAIN AIRLINES</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a><a href="flights.html">Flights</a>
+            <a class="active" href="booking.html">Book Flight</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+        </div>
+    </nav>
+</header>
+
+<section class="page-header">
+    <p class="small-title">ONLINE RESERVATION</p>
+    <h1>Book Your Flight</h1>
+    <p>Enter passenger and journey details below.</p>
+</section>
+
+<section class="section narrow">
+    <form id="bookingForm" class="form-card">
+        <h2>Journey Details</h2>
+        <div class="form-grid">
+            <label>Trip Type<select id="tripType"><option>Round Trip</option><option>One Way</option></select></label>
+            <label>From<select id="from" required><option value="">Select</option><option>Hyderabad</option><option>Delhi</option><option>Mumbai</option><option>Bengaluru</option><option>Chennai</option><option>Kolkata</option><option>Dubai</option><option>Singapore</option><option>London</option></select></label>
+            <label>To<select id="to" required><option value="">Select</option><option>Hyderabad</option><option>Delhi</option><option>Mumbai</option><option>Bengaluru</option><option>Chennai</option><option>Kolkata</option><option>Dubai</option><option>Singapore</option><option>London</option></select></label>
+            <label>Departure Date<input type="date" id="travelDate" required></label>
+            <label>Passengers<input type="number" id="passengers" min="1" max="9" value="1" required></label>
+            <label>Class<select id="classType"><option>Economy</option><option>Premium Economy</option><option>Business</option></select></label>
+        </div>
+
+        <h2>Passenger Details</h2>
+        <div class="form-grid">
+            <label>Full Name<input type="text" id="passengerName" required placeholder="Enter full name"></label>
+            <label>Email<input type="email" id="passengerEmail" required placeholder="name@example.com"></label>
+            <label>Phone<input type="tel" id="passengerPhone" required placeholder="+91 9876543210"></label>
+        </div>
+
+        <button class="btn" type="submit">Confirm Booking</button>
+        <p id="bookingMessage" class="message"></p>
+    </form>
+
+    <div id="ticket" class="ticket hidden">
+        <div class="ticket-top"><h2>✈ MUSTHAFA HUSSAIN AIRLINES</h2><span>CONFIRMED</span></div>
+        <p class="success">✓ Booking confirmed successfully!</p>
+        <div class="ticket-grid">
+            <p><b>PNR</b><span id="tPNR"></span></p>
+            <p><b>Passenger</b><span id="tName"></span></p>
+            <p><b>Route</b><span id="tRoute"></span></p>
+            <p><b>Date</b><span id="tDate"></span></p>
+            <p><b>Flight</b><span id="tFlight"></span></p>
+            <p><b>Class</b><span id="tClass"></span></p>
+            <p><b>Passengers</b><span id="tPassengers"></span></p>
+            <p><b>Total Fare</b><span id="tFare"></span></p>
+        </div>
+        <button id="printTicket" class="btn">Print Ticket</button>
+    </div>
+</section>
+<footer>© 2026 MUSTHAFA HUSSAIN AIRLINES</footer>
+<script src="script.js"></script>
+</body>
+</html>

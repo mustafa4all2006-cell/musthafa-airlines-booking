@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musthafa Hussain Airlines</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <a class="logo" href="index.html">✈ MUSTHAFA HUSSAIN AIRLINES</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a><a class="active" href="flights.html">Flights</a>
+            <a href="booking.html">Book Flight</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+        </div>
+    </nav>
+</header>
+
+<section class="page-header">
+    <p class="small-title">FLIGHT SCHEDULE</p>
+    <h1>Available Flights</h1>
+    <p>Sample domestic and international flights for this student project.</p>
+</section>
+
+<section class="section">
+    <div class="filter-box">
+        <input id="flightSearch" type="text" placeholder="Search route, e.g. Hyderabad or Dubai">
+        <select id="flightType">
+            <option value="all">All Flights</option>
+            <option value="domestic">Domestic</option>
+            <option value="international">International</option>
+        </select>
+    </div>
+
+    <div id="flightList" class="flight-list">
+        <div class="flight-card" data-type="domestic" data-search="hyderabad delhi">
+            <div><span class="badge">Domestic</span><h3>Hyderabad → Delhi</h3><p>MH 101 · 06:30 AM - 08:55 AM · 2h 25m</p></div>
+            <strong>₹5,499</strong><a class="btn small-btn" href="booking.html">Book</a>
+        </div>
+        <div class="flight-card" data-type="domestic" data-search="mumbai bengaluru">
+            <div><span class="badge">Domestic</span><h3>Mumbai → Bengaluru</h3><p>MH 304 · 11:15 AM - 12:55 PM · 1h 40m</p></div>
+            <strong>₹4,299</strong><a class="btn small-btn" href="booking.html">Book</a>
+        </div>
+        <div class="flight-card" data-type="domestic" data-search="hyderabad chennai">
+            <div><span class="badge">Domestic</span><h3>Hyderabad → Chennai</h3><p>MH 412 · 02:20 PM - 03:45 PM · 1h 25m</p></div>
+            <strong>₹4,799</strong><a class="btn small-btn" href="booking.html">Book</a>
+        </div>
+        <div class="flight-card" data-type="international" data-search="hyderabad dubai">
+            <div><span class="badge international">International</span><h3>Hyderabad → Dubai</h3><p>MH 205 · 09:45 PM - 12:10 AM · 3h 55m</p></div>
+            <strong>₹18,999</strong><a class="btn small-btn" href="booking.html">Book</a>
+        </div>
+        <div class="flight-card" data-type="international" data-search="delhi singapore">
+            <div><span class="badge international">International</span><h3>Delhi → Singapore</h3><p>MH 510 · 10:30 PM - 06:40 AM · 5h 40m</p></div>
+            <strong>₹25,999</strong><a class="btn small-btn" href="booking.html">Book</a>
+        </div>
+        <div class="flight-card" data-type="international" data-search="mumbai london">
+            <div><span class="badge international">International</span><h3>Mumbai → London</h3><p>MH 720 · 01:15 AM - 06:10 AM · 10h 25m</p></div>
+            <strong>₹42,999</strong><a class="btn small-btn" href="booking.html">Book</a>
+        </div>
+    </div>
+</section>
+<footer>© 2026 MUSTHAFA HUSSAIN AIRLINES</footer>
+<script src="script.js"></script>
+</body>
+</html>
